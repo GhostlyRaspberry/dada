@@ -1,0 +1,206 @@
+/*Subtítulos Gerais*/
+.subtitulos {
+  font-family: Gotham;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+
+
+/*Classe que aumenta o "gutter" para 40px (default do bootstrap é 30px)*/
+.row-large-gutter {
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.row-large-gutter > * {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+/*Container do HEADER*/
+.navegacao {
+  background-color: #161F25;
+  height: 100px;
+}
+
+.navegacaoLinks {
+  color: white;
+  padding-left: 30px  ;
+}
+
+.navegacaoLinks a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight:bold;
+  font-family:gotham;
+}
+
+.navegacaoLinks a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+
+
+/*Container do MAPA DO SITE*/
+.mapinha {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #D4E9F6;
+  font-family: gotham;
+  font-size: 15px;
+  color: red;
+}
+
+.mapaLink a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.mapaEspacamento{
+  color: #212121;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.mapaAtual{
+  color: #0389A6;
+  font-weight: 900;
+}
+
+
+
+/*Container das CATEGORIAS*/
+.categorias{
+  display:flex;
+  align-items: center;
+}
+
+/*Nomes que ficam embaixo da imagem da categoria*/
+.categoriasNome {
+  font-family: "Brasilero 2018 Free";
+  font-size: 23px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background-image: url("FundoDADA.png");
+}
+
+.gallery-cell {
+  width: 250px;
+  height: 250px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+  margin: 20px;
+}
+
+.gallery-cell img {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+
+/* white circles */
+.flickity-page-dots .dot {
+  opacity: 0;
+  background: transparent;
+}
+
+
+/*Animação de transição para fazer a caixinha aparecer com hover*/
+.produtoMiniImagem:hover + .invisivel {
+  visibility: visible;
+  opacity: 0.75;
+  transition-delay: 0.1s;
+  transition-duration: 0.5s;
+}
+
+/*Caixinha com nome e preço dos produtos no Preview Pequeno*/
+.invisivel {
+  height: 80px;
+  width: 250px;
+  color: white;
+  background: rgba(3, 72, 114);
+  visibility: hidden;
+  opacity: 0;
+  font-family: Gotham;
+  font-style: normal;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  bottom: 80px;
+}
+
+/*Nome do Produto na caixinha*/
+.invisivelNome {
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 6px;
+
+}
+
+/*Preço do Produto na caixinha*/
+.invisivelPreco {
+  padding-top: 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/*Container da Caixinha de "VENHA SER DADA"*/
+.colaboreAnuncio {
+  height: 175px;
+  background-color: #0389A6;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+/*Container do FOOTER*/
+.footer {
+  background-color: #161F25;
+  height: 270px;
+}
