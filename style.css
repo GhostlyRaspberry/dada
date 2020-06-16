@@ -1,6 +1,6 @@
 /*Subtítulos Gerais*/
 .subtitulos {
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-weight: bold;
   font-size: 30px;
   padding-top: 50px;
@@ -8,15 +8,18 @@
 }
 
 
-/*Classe que aumenta o "gutter" para 40px (default do bootstrap é 30px)*/
+/*Classe que aumenta o espaçamento entre colunas para 40px (default do bootstrap é 30px)*/
+/*
 .row-large-gutter {
   margin-left: -40px;
   margin-right: -40px;
 }
-.row-large-gutter > * {
-  padding-left: 40px;
-  padding-right: 40px;
-}
+*/
+  .row-large-gutter > * {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
 
 
 
@@ -32,19 +35,22 @@
   z-index: 20;
 }
 
+/*Espaçamento entre os itens do header (horizontal e vertical)*/
 .navegacaoLinks {
-  color: white;
   padding-left: 30px  ;
+  padding-top: 12px;
 }
 
+/*Links do Header*/
 .navegacaoLinks a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight:bold;
-  font-family:gotham;
+  font-family: Gotham, sans-serif;
 }
 
+/*Transição dos links do Header com hover*/
 .navegacaoLinks a:hover {
   color: #0389A6;
   transition-delay: 0.05s;
@@ -54,26 +60,30 @@
 
 
 
+
 /*Container do MAPA DO SITE*/
 .mapinha {
   height: 30px;
   display: flex;
   align-items: center;
   background-color: #D4E9F6;
-  font-family: gotham;
+  font-family: Gotham, sans-serif;
   font-size: 15px;
-  color: red;
 }
 
+/*Espaçamento do Mapa para alinhar-se ao conteúdo*/
 .mapinha .container .row {
   padding-left: 30px;
 }
 
+/*Links do Mapinha*/
 .mapaLink a {
   color: #212121;
   text-decoration: none;
+  margin-top: 10px;
 }
 
+/*Setas do Mapinha*/
 .mapaEspacamento{
   color: #212121;
   padding-right: 20px;
@@ -81,11 +91,13 @@
   cursor: default;
 }
 
+/*Página atual do Mapinha*/
 .mapaAtual{
   color: #0389A6;
   font-weight: 900;
   cursor: default;
 }
+
 
 
 
@@ -97,7 +109,7 @@
 
 /*Nomes que ficam embaixo da imagem da categoria*/
 .categoriasNome {
-  font-family: "Brasilero 2018 Free";
+  font-family: "Brasilero 2018 Free", sans-serif;
   font-size: 23px;
   text-align: center;
   margin-top: 5px;
@@ -108,18 +120,18 @@
 
 
 
-/* external css: flickity.css */
+/*Elementos da Galeria de produtos (Feito com Flickity) */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body { font-family: sans-serif; }
-
+/*Background da Galeria*/
 .gallery {
-  background-image: url("FundoDADA.png");
+  background-image: url("imagens/assets/fundoDADA.png");
 }
 
+/*Tamanho e espaçamento de cada item da Galeria*/
 .gallery-cell {
   width: 250px;
   height: 250px;
@@ -128,17 +140,18 @@ body { font-family: sans-serif; }
   margin: 20px;
 }
 
+/*Drop-Shadow dos produtos da Galeria*/
 .gallery-cell img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-/* big buttons, no circle */
+/*CUSTOMIZAÇÃO DOS CONTROLES*/
+/*Círculo atrás do botão de "próximo"*/
 .flickity-prev-next-button {
   background: transparent;
 }
-/* arrow color */
+/*Cor da seta*/
 .flickity-prev-next-button .arrow {
   fill: white;
 }
@@ -148,24 +161,23 @@ body { font-family: sans-serif; }
 .flickity-prev-next-button:hover {
   background: transparent;
 }
-/* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none;
 }
-
-
-/* white circles */
+/*Bolinhas do slide atual*/
 .flickity-page-dots .dot {
   opacity: 0;
   background: transparent;
 }
 
 
-/*Animação de transição para fazer a caixinha aparecer com hover*/
-.produtoMiniImagem:hover + .invisivel {
+
+
+/*Transição para fazer a caixinha aparecer com hover*/
+.produtoMini:hover .invisivel {
   visibility: visible;
   opacity: 0.75;
-  transition-delay: 0.1s;
+  transition-delay: 0.2s;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
@@ -178,7 +190,7 @@ body { font-family: sans-serif; }
   background: rgba(3, 72, 114);
   visibility: hidden;
   opacity: 0;
-  font-family: Gotham;
+  font-family: Gotham, sans-serif;
   font-style: normal;
   text-align: center;
   position: relative;
@@ -191,7 +203,6 @@ body { font-family: sans-serif; }
   font-weight: 300;
   font-size: 20px;
   padding-top: 6px;
-
 }
 
 /*Preço do Produto na caixinha*/
@@ -201,6 +212,9 @@ body { font-family: sans-serif; }
   font-size: 24px;
 }
 
+
+
+
 /*Container da Caixinha de "VENHA SER DADA"*/
 .colaboreAnuncio {
   height: 175px;
@@ -208,7 +222,6 @@ body { font-family: sans-serif; }
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 
 
 
