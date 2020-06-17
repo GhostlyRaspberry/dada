@@ -217,9 +217,7 @@
 
 /*Container da Caixinha de "VENHA SER DADA"*/
 .colaboreAnuncio {
-  height: 175px;
-  background-color: #0389A6;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 50px;
 }
 
@@ -229,5 +227,81 @@
 /*Container do FOOTER*/
 .footer {
   background-color: #161F25;
-  height: 270px;
+  color: white;
+  padding-top: 50px;
+}
+
+
+.footer-letramaior{
+  font-family: Populaire;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.footer-letramenor p, .footer-letramenor a{
+  font-family: Gotham;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.footer-letramenor a {
+  padding-left: 6px;
+}
+
+.footer-letramenor{
+  padding-bottom: 12px;
+}
+
+.footer-letramenor img{
+  margin-bottom: 6px;
+}
+
+/*FORMULÁRIO*/
+.footerFormulario{
+
+}
+
+.styled{
+  border: 0;
+  height: 25px;
+  width: 75%;
+  font-size: 13px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color:  #0389A6;
+	font-family: gotham;
+  font-weight: bold;
+}
+
+.styled:hover {
+  background-color: #036A9A;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.containerCaixinha{
+  height: 25px;
+  margin-bottom: 2px;
+}
+
+.caixinha{
+  border: 0;
+  width: 75%;
+  height: 20px;
+  padding: 0 20px;
+  font-size: 13px;
+  text-align: left;
+  color: black;
+  border-radius: 5px;
+	font-family: gotham;
+}
+
+
+.itemFooter{
+  padding-bottom: 50px;
 }
