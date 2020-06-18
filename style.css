@@ -227,44 +227,63 @@
 /*Container do FOOTER*/
 .footer {
   background-color: #161F25;
-  color: white;
   padding-top: 50px;
+  color:white;
 }
 
+/*Espaçamento entre as colunas do Footer quando empilhadas horizontalmente*/
+.itemFooter{
+  padding-bottom: 50px;
+}
 
-.footer-letramaior{
+/*Títulos do Footer*/
+.footerLetraMaior{
   font-family: Populaire;
   font-style: normal;
-  font-size: 30px;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 6px;
 }
 
-.footer-letramenor p, .footer-letramenor a{
+/*Texto pequeno do Footer*/
+.footerLetraMenor p, .footerLetraMenor a{
   font-family: Gotham;
   font-weight: 200;
   font-style: normal;
-  font-size: 14px;
+  font-size: 15px;
   color: white;
   margin-block-end: 0;
   margin-block-start: 0;
 }
 
-.footer-letramenor a {
-  padding-left: 6px;
+/*Espaçamento entre cada link do Footer*/
+.footerLink{
+  margin-bottom: 13px;
 }
 
-.footer-letramenor{
-  padding-bottom: 12px;
+/*Espaçamento entre os ícones e os links*/
+.footerLink a {
+  padding-left: 8px;
 }
 
-.footer-letramenor img{
-  margin-bottom: 6px;
+
+
+
+/*Caixa de texto do formulário*/
+.caixinha{
+  border: 0;
+  width: 75%;
+  height: 20px;
+  padding: 0 18px;
+  font-size: 13px;
+  text-align: left;
+  color: black;
+  border-radius: 5px;
+	font-family: gotham;
+  margin-bottom: 5px;
 }
 
-/*FORMULÁRIO*/
-.footerFormulario{
-
-}
-
+/*Botão de cadastro do formulário*/
 .styled{
   border: 0;
   height: 25px;
@@ -277,31 +296,8 @@
 	font-family: gotham;
   font-weight: bold;
 }
-
 .styled:hover {
   background-color: #036A9A;
   transition-duration: 0.2s;
   transition-timing-function: ease;
-}
-
-.containerCaixinha{
-  height: 25px;
-  margin-bottom: 2px;
-}
-
-.caixinha{
-  border: 0;
-  width: 75%;
-  height: 20px;
-  padding: 0 20px;
-  font-size: 13px;
-  text-align: left;
-  color: black;
-  border-radius: 5px;
-	font-family: gotham;
-}
-
-
-.itemFooter{
-  padding-bottom: 50px;
 }
