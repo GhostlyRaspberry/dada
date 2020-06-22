@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DADA</title>
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/assets/favicon.ico" />
+<!--CSS do Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!--Flickity (Galeria de produtos da página inicial e de produto)-->
+		<link rel="stylesheet" href="codigos externos/flickity/flickity.css" media="screen">
+		<link rel="stylesheet" type="text/CSS" href="style.css">
+<!--Javascript do Bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--Metadata-->
+    <meta name="viewport" content="width=device-width">
+    <meta lang="pt-BR"/>
+    <meta charset="utf-8"/>
+<!--Slick-->
+    <link rel="stylesheet" type="text/css" href="codigos externos/slick/slick.css">
+  </head>
+<body>
+  <header>
+<!--Header mínimamente responsivo-->
+    <div class="container-fluid navegacao">
+      <div class="container">
+          <nav class="navbar navbar-expand-md navbar-dark align-items-end" style="background-color:#161F25">
+            <a class="navbar-brand" href="index.html">
+              <img src="imagens/assets/logoDADA.png" height="70px">
+            </a>
+            <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav ml-auto">
+                <li class="navbar-item navegacaoLinks">
+                  <a class="navbar-link" href="dada.html">DADA</a>
+                </li>
+                <li class="navbar-item navegacaoLinks">
+                  <a class="navbar-link" href="loja.html">LOJA</a>
+                </li>
+                <li class="navbar-item navegacaoLinks">
+                  <a class="navbar-link" href="portfolio.html">PORTFÓLIO</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+    </div>
+
+
+
+<!--Mapa do site (Breadcrumbs)-->
+    <div class="container-fluid mapinha">
+      <div class="container">
+        <div class="row">
+          <div class="mapaLink">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
+          <div class="mapaLink">
+            <a href="loja.html">Loja</a>
+          </div>
+          <div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
+          <div class="mapaLink">
+            <a href="#">Moletons</a>
+          </div>
+          <div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
+          <div class="mapaAtual">Moletom Bacana</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+<!--"Miolo" da Página de Produtos (Carrossel, Imagem com Zoom, Informações e Descrição)-->
+  <div class="container">
+    <div class="row row-large-gutter produto">
+      <div class="col-3 col-lg-2" style="padding-right:22px">
+        <div class="slider-nav">
+          <div class="box"><img class="img-fluid" src="P1.png"></div>
+          <div class="box"><img class="img-fluid" src="P2.png"></div>
+          <div class="box"><img class="img-fluid" src="P3.png"></div>
+          <div class="box"><img class="img-fluid" src="imagens/assets/iconePerfil.png"></div>
+        </div>
+      </div>
+      <div class="col-9 col-lg-5" style="padding-left:20px;">
+        <div class="slider-for">
+          <span class='zoom' id='ex1'>
+            <div class="box"><img class="img-fluid" src="P1.png"></div>
+          </span>
+          <span class='zoom' id='ex2'>
+            <div class="box"><img class="img-fluid" src="P2.png"></div>
+          </span>
+          <span class='zoom' id='ex3'>
+            <div class="box"><img class="img-fluid" src="P3.png"></div>
+          </span>
+          <span class='zoom' id='ex4'>
+            <div class="box"><img class="img-fluid" src="imagens/assets/iconePerfil.png"></div>
+          </span>
+        </div>
+      </div>
+
+
+  <div class="col-lg-5 produtoInfo">
+    <h2>Moletom Bacana</h2>
+    <h1>R$42,00</h1>
+    <a href="http://www.google.com" target="_blank">
+      <button>COMPRAR</button><br>
+    </a>
+    <a href="#">
+      <img src="imagens/assets/iconePerfil.png" class="iconeDesignerMini">
+      <div>
+        <h6>Design por</h6>
+        <h5>Fulano de Tal</h5>
+      </div>
+    </a>
+    <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus urna vitae massa commodo, accumsan sodales tortor efficitur. Vivamus mauris urna.</p>
+  </div>
+
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row row-large-gutter">
+      <div class="col-lg-10">
+      <h2 class="subtitulos"> Descrição </h2>
+      <p class="paragrafos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet justo fringilla, aliquam felis in, molestie lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent pharetra lacus eu leo ullamcorper, a pellentesque turpis tristique. Duis et metus posuere ipsum feugiat convallis. Suspendisse vitae rhoncus urna. Donec sit amet aliquam urna. Nulla facilisi. Mauris hendrerit at libero id auctor. In vitae ullamcorper felis. Donec euismod vitae odio vel aliquet.</p>
+      <h2 class="subtitulos"> Recomendados para você </h2>
+    </div>
+  </div>
+</div>
+
+
+<!-- Galeria de produtos utilizando flickity-->
+		<div class="gallery js-flickity" data-flickity-options='{ "freeScroll": true, "wrapAround": true}'>
+		  <div class="gallery-cell">
+				<div class="produtoMini">
+					<img src="imagens/produtos/Produto 1.png" class="produtoMiniImagem">
+					<div class="invisivel">
+						<div class="invisivelNome">Nome do Produto</div>
+						<div class="invisivelPreco">R$20,00</div>
+					</div>
+				</div>
+			</div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		  <div class="gallery-cell"></div>
+		</div>
+
+
+
+<!--Anúncio chamando colaboradores para o DADA-->
+		<div class="container">
+			<div class="row row-large-gutter justify-content-center">
+				<div class="col-md-12 colaboreAnuncio">
+					<a href="#">
+						<img class="img-fluid" src="imagens/assets/banner.png" >
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+<!--Footer mínimamente responsivo-->
+		<footer>
+			<div class="container-fluid footer">
+				<div class="container footer-content">
+					<div class="row row-large-gutter">
+
+						<div class="col-md-4 itemFooter">
+							<picture>
+								<source media="(max-width:768px)" srcset="imagens/assets/longoDADA.png">
+								<img class="img-fluid" src="imagens/assets/logoDADA.png" style="width:95%">
+							</picture>
+						</div>
+
+						<div class="col-md-4 itemFooter">
+							<h1 class="footerLetraMaior"> FIQUE POR DENTRO </h1>
+							<div class="footerLetraMenor">
+								<p> Receba nossas novidades</p>
+							</div>
+							<div>
+							<form method="post">
+								<input class="caixinha" type="text" id="Nome" placeholder="nome"/>
+								<input class="caixinha" type="email" id="mail" placeholder="e-mail"/>
+								<input class="botaozinho" type="submit" value="CADASTRAR" onclick="msg()">
+							</form>
+						</div>
+						</div>
+
+						<div class="col-md-4">
+							<h1 class="footerLetraMaior">MANDA UM OI</h1>
+							<div class="footerLetraMenor footerLink">
+								<img src="imagens/assets/insta.png" style="width:26px;height:26px;"> <a href="https://www.instagram.com/dada_ca/?hl=pt"> @dada_ca </a>
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/fb.png" style="width:26px;height:26px;"> <a href="https://www.facebook.com/CALPL-Jr-Design-Mackenzie-264488297773833/ ">@dada.mackenzie		</a>
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/email.png" style="width:26px;height:26px;"> <a> design.calpljr@gmail.com </a>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<!--jQuery Zoom-->
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+<script src='codigos externos/jquery zoom/jquery.zoom.js'></script>
+<script>
+  $(document).ready(function(){
+    $('#ex1').zoom({ magnify: 1, duration: 100});
+    $('#ex2').zoom({ magnify: 1, duration: 100});
+    $('#ex3').zoom({ magnify: 1, duration: 100});
+    $('#ex4').zoom({ magnify: 1, duration: 100});
+  });
+</script>
+
+
+<!--Slick - Carrossel utilizado na página de produto-->
+  <script src="codigos externos/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+  //Carrosséis da página de produto
+  //Primeiro: Previews das imagens, rolagem vertical e responsivo
+  $(document).on('ready', function() {
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+      vertical: true,
+      verticalSwiping: true,
+      responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 4,
+        }
+      },]
+    });
+  //Segundo: Imagem grande, sem rolagem e com o zoom aplicado depois
+    $('.slider-for').slick({
+     slidesToShow: 1,
+     slidesToScroll: 1,
+     arrows: false,
+     fade: true,
+     asNavFor: '.slider-nav',
+     draggable: false,
+     swipe: false,
+   });
+  });
+</script>
+
+
+<!--Links do Javascript-->
+		<script src="codigos externos/flickity/flickity.pkgd.min.js"></script>
+  	<script src="codigos externos/flickity.pkgd.min.js"></script>
+</body>
+</html>

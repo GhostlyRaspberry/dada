@@ -1,30 +1,49 @@
+/*COnfigurações globais*/
+*{
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /*Subtítulos Gerais*/
 .subtitulos {
-  font-family: Gotham, sans-serif;
+  font-family: "Gotham", sans-serif;
   font-weight: bold;
   font-size: 30px;
   padding-top: 50px;
   padding-bottom: 25px;
 }
 
+/*Parágrafos Gerais*/
+.paragrafos {
+  font-family: "Gotham", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
 
-/*Classe que aumenta o espaçamento entre colunas para 40px (default do bootstrap é 30px)*/
+
+
+
+
+/*Classe que aumenta o espaçamento entre colunas*/
 /*
 .row-large-gutter {
-  margin-left: -40px;
-  margin-right: -40px;
+  margin-left: -30px;
+  margin-right: -30px;
 }
 */
   .row-large-gutter > * {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
 
 
 
 
-/*Container do HEADER*/
+/*  =======================  HEADER  =======================  */
+/*Container do Header*/
 .navegacao {
   background-color: #161F25;
   height: 100px;
@@ -47,27 +66,29 @@
   text-decoration: none;
   font-size: 18px;
   font-weight:bold;
-  font-family: Gotham, sans-serif;
+  font-family: "Gotham", sans-serif;
+  transition: color .2s;
 }
 
 /*Transição dos links do Header com hover*/
 .navegacaoLinks a:hover {
   color: #0389A6;
   transition-delay: 0.05s;
-  transition-duration: 0.2s;
   transition-timing-function: ease;
 }
 
 
 
 
-/*Container do MAPA DO SITE*/
+
+/*  =======================  MAPINHA DO SITE  =======================  */
+/*Container do Mapa do Site*/
 .mapinha {
   height: 30px;
   display: flex;
   align-items: center;
   background-color: #D4E9F6;
-  font-family: Gotham, sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 15px;
 }
 
@@ -96,12 +117,15 @@
   color: #0389A6;
   font-weight: 900;
   cursor: default;
+  line-height: 24px; /*Gambiarra pra alinhar com o .mapaLink*/
 }
 
 
 
 
-/*Container das CATEGORIAS*/
+
+/*  =======================  CATEGORIAS  =======================  */
+/*Container das Categorias*/
 .categorias{
   display:flex;
   align-items: center;
@@ -110,9 +134,9 @@
 /*Nomes que ficam embaixo da imagem da categoria*/
 .categoriasNome {
   font-family: "Brasilero 2018 Free", sans-serif;
-  font-size: 23px;
+  font-size: 24px;
   text-align: center;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -120,11 +144,9 @@
 
 
 
+
+/*  =======================  GALERIA DE PRODUTOS  =======================  */
 /*Elementos da Galeria de produtos (Feito com Flickity) */
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
 /*Background da Galeria*/
 .gallery {
@@ -173,6 +195,15 @@
 
 
 
+
+/*  =======================  PREVIEW MINI DO PRODUTO  =======================  */
+/* Caixinha dos produtos utilzado dos carrosseis do flickity (código acima)*/
+
+/*Tirar a decoração dos links dentro da caixinha de Preço/Nome*/
+.produtoMini a{
+  text-decoration: none;
+}
+
 /*Transição para fazer a caixinha aparecer com hover*/
 .produtoMini:hover .invisivel {
   visibility: visible;
@@ -190,7 +221,7 @@
   background: rgba(3, 72, 114);
   visibility: hidden;
   opacity: 0;
-  font-family: Gotham, sans-serif;
+  font-family: "Gotham", sans-serif;
   font-style: normal;
   text-align: center;
   position: relative;
@@ -214,19 +245,21 @@
 
 
 
-
+/*  =======================  LINK PARA A PÁGINA DE "COLABORE"  =======================  */
 /*Container da Caixinha de "VENHA SER DADA"*/
 .colaboreAnuncio {
   margin-top: 60px;
-  margin-bottom: 50px;
 }
 
 
 
 
+
+/*  =======================  FOOTER  =======================  */
 /*Container do FOOTER*/
 .footer {
   background-color: #161F25;
+  margin-top: 60px;
   padding-top: 50px;
   color:white;
 }
@@ -238,7 +271,7 @@
 
 /*Títulos do Footer*/
 .footerLetraMaior{
-  font-family: Populaire;
+  font-family: Populaire, sans-serif;
   font-style: normal;
   font-size: 32px;
   color: white;
@@ -247,7 +280,7 @@
 
 /*Texto pequeno do Footer*/
 .footerLetraMenor p, .footerLetraMenor a{
-  font-family: Gotham;
+  font-family: "Gotham", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 15px;
@@ -269,22 +302,24 @@
 
 
 
+
+/*  =======================  FORMULÁRIO DO FOOTER  =======================  */
 /*Caixa de texto do formulário*/
 .caixinha{
   border: 0;
   width: 75%;
   height: 20px;
-  padding: 0 18px;
+  padding: 0 12px;
   font-size: 13px;
   text-align: left;
   color: black;
   border-radius: 5px;
-	font-family: gotham;
+	font-family: "Gotham", sans-serif;
   margin-bottom: 5px;
 }
 
 /*Botão de cadastro do formulário*/
-.styled{
+.botaozinho{
   border: 0;
   height: 25px;
   width: 75%;
@@ -293,11 +328,128 @@
   color: white;
   border-radius: 5px;
   background-color:  #0389A6;
-	font-family: gotham;
-  font-weight: bold;
+	font-family: "Gotham" sans-serif;
+  font-weight: 600;
 }
-.styled:hover {
+.botaozinho:hover {
   background-color: #036A9A;
   transition-duration: 0.2s;
   transition-timing-function: ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  =======================  PÁGINA DE PRODUTO INDIVIDUAL  =======================  */
+
+/*Container do info de PRODUTO*/
+.produto{
+  padding: 40px 0 10px;
+}
+
+/*Ícone do Designer que aparece na página de produto*/
+.iconeDesignerMini{
+  height:50px;
+  border-radius: 50px;
+  float:left;
+  margin-right: 8px;
+}
+
+/*Fonte das informações do Produto*/
+.produtoInfo{
+  font-family: "Gotham", sans-serif;
+}
+
+/*Nome do produto*/
+.produtoInfo h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/*Preço do produto*/
+.produtoInfo h1 {
+  font-weight: 900;
+  font-size: 45px;
+}
+
+/*Botão de COMPRAR*/
+.produtoInfo button{
+  color: white;
+  border: 0;
+  text-align: center;
+  height: 60px;
+  width: 250px;
+  border-radius: 5px;
+  background-color:  #0389A6;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px 0 50px;
+}
+
+/*Animação do botão de COMPRAR*/
+.produtoInfo button:hover {
+  background-color: #036A9A;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/*Nome do produto*/
+.produtoInfo h2 {
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/*Preço do produto*/
+.produtoInfo h1 {
+  font-weight: 900;
+  font-size: 45px;
+}
+
+/*"Design por" da página de produto*/
+.produtoInfo h6{
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+/*Nome do Designer na página de produto*/
+.produtoInfo h5{
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/*Descrição do Designer  na página de produto*/
+.produtoInfo p{
+  line-height: 25px;
+}
+/*Estilo do Link para a página do Designer*/
+.produtoInfo a{
+  color:#212529;
+  text-decoration: none;
+}
+
+/*Espaçamento entre o nome do produto e as imagens em telas de tamanho médio*/
+@media screen and (max-width:992px){
+.produto h2{
+  padding-top: 30px;
+}
+
+/*Função de ZOOM do jQuery*/
+.zoom {
+  display:inline-block;
+  position: relative;
+}
+
+
+.slider-nav .box, .slider-nav .box {
+  background-color: #0389A6;
 }
