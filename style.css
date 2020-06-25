@@ -1,3 +1,32 @@
+/*  =======================  FONTES  =======================  */
+
+@font-face {
+    font-family: 'Brasilero';
+    src: url('fontes/brasilero2018free-webfont.woff2') format('woff2'),
+         url('fontes/brasilero2018free-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Populaire';
+    src: url('fontes/populaire-webfont.woff2') format('woff2'),
+         url('fontes/populaire-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  =======================  ESTILOS GERAIS  =======================  */
 /*COnfigurações globais*/
 *{
   text-rendering: optimizeLegibility;
@@ -21,10 +50,6 @@
   font-weight: 400;
   font-size: 18px;
 }
-
-
-
-
 
 /*Classe que aumenta o espaçamento entre colunas*/
 /*
@@ -84,7 +109,8 @@
 /*  =======================  MAPINHA DO SITE  =======================  */
 /*Container do Mapa do Site*/
 .mapinha {
-  height: 30px;
+  height: auto;
+  padding: 3px 0;
   display: flex;
   align-items: center;
   background-color: #D4E9F6;
@@ -133,11 +159,11 @@
 
 /*Nomes que ficam embaixo da imagem da categoria*/
 .categoriasNome {
-  font-family: "Brasilero 2018 Free", sans-serif;
-  font-size: 24px;
+  font-family: "Brasilero", sans-serif;
+  font-size: 25px;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 12px;
+  margin-bottom: 36px;
 }
 
 
@@ -271,7 +297,7 @@
 
 /*Títulos do Footer*/
 .footerLetraMaior{
-  font-family: Populaire, sans-serif;
+  font-family: "Populaire", sans-serif;
   font-style: normal;
   font-size: 32px;
   color: white;
@@ -336,15 +362,6 @@
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -447,9 +464,4 @@
 .zoom {
   display:inline-block;
   position: relative;
-}
-
-
-.slider-nav .box, .slider-nav .box {
-  background-color: #0389A6;
 }

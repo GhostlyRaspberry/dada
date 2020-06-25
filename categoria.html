@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>DADA</title>
+		<link rel="shortcut icon" type="image/x-icon" href="imagens/assets/favicon.ico" />
+<!--CSS do Bootstrap-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!--CSS padrão a todas as páginas-->
+		<link rel="stylesheet" type="text/CSS" href="style.css">
+<!--Javascript do Bootstrap-->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--Link do jQuery que por alguma razão precisa estar aqui para o botão de "MOSTRAR MAIS" funcionar-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--Metadata-->
+		<meta name="viewport" content="width=device-width">
+		<meta lang="pt-BR"/>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<header>
+<!--Header mínimamente responsivo-->
+			<div class="container-fluid navegacao">
+				<div class="container">
+						<nav class="navbar navbar-expand-md navbar-dark align-items-end" style="background-color:#161F25">
+							<a class="navbar-brand" href="index.html">
+								<img src="imagens/assets/logoDADA.png" height="70px">
+							</a>
+						 	<button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggler" type="button">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarToggler">
+								<ul class="navbar-nav ml-auto">
+									<li class="navbar-item navegacaoLinks">
+										<a class="navbar-link" href="dada.html">DADA</a>
+									</li>
+									<li class="navbar-item navegacaoLinks">
+										<a class="navbar-link" href="loja.html">LOJA</a>
+									</li>
+									<li class="navbar-item navegacaoLinks">
+										<a class="navbar-link" href="portfolio.html">PORTFÓLIO</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+				</div>
+			</div>
+
+
+
+	<!--Mapa do site (Breadcrumbs)-->
+	    <div class="container-fluid mapinha">
+	      <div class="container">
+	        <div class="row">
+	          <div class="mapaLink">
+	            <a href="index.html">Home</a>
+	          </div>
+	          <div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
+	          <div class="mapaLink">
+	            <a href="loja.html">Loja</a>
+	          </div>
+	          <div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
+	          <div class="mapaAtual">Moletons</div>
+	        </div>
+	      </div>
+	    </div>
+	  </header>
+
+
+
+<!--"Miolo" da Página de Lista de Produtos-->
+		<div class="container">
+			<div class="row row-large-gutter">
+
+
+				<div class="col-12 sidebarCelular">
+					<div class="sidebarToggle">
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="collapse" data-target="#conteudoSidebar">
+						 CATEGORIAS
+					 </button>
+				 </div>
+				 <div class="collapse" id="conteudoSidebar">
+					 <div>
+						 <ul>
+								 <li><a href="#">Camisetas</a></li>
+								 <hr>
+								 <li><a href="#">Canecas</a></li>
+								 <hr>
+								 <li><a href="#">Moletons</a></li>
+								 <hr>
+								 <li><a href="#">Shorts</a></li>
+								 <hr>
+								 <li><a href="#">Bottons</a></li>
+								 <hr>
+								 <li><a href="#">Bandanas</a></li>
+								 <hr>
+								 <li><a href="#">Tirantes</a></li>
+								 <hr>
+								 <li><a href="#">Ecobags</a></li>
+								 <hr>
+								 <li><a href="#">Chaveiros</a></li>
+
+						 </ul>
+					 </div>
+				</div>
+			</div>
+
+
+
+
+
+				<div class="col-lg-3">
+				</div>
+				<div class="col-lg-9">
+					<h2 class="subtitulos">Moletons</h2>
+				</div>
+			</div>
+
+
+
+
+
+<!--SIDEBAR COMPUTADOR-->
+		  <div class="row row-large-gutter">
+				<div class="col-12 col-lg-3">
+					<div class="sidebarComputador">
+					 <h2>CATEGORIAS</h2>
+					 <ul>
+							 <li><a href="#">Camisetas</a></li>
+							 <hr>
+							 <li><a href="#">Canecas</a></li>
+							 <hr>
+							 <li><a href="#">Moletons</a></li>
+							 <hr>
+							 <li><a href="#">Shorts</a></li>
+							 <hr>
+							 <li><a href="#">Bottons</a></li>
+							 <hr>
+							 <li><a href="#">Bandanas</a></li>
+							 <hr>
+							 <li><a href="#">Tirantes</a></li>
+							 <hr>
+							 <li><a href="#">Ecobags</a></li>
+							 <hr>
+							 <li><a href="#">Chaveiros</a></li>
+
+					 </ul>
+					</div>
+				</div>
+
+
+
+
+				<div class="col-12 col-lg-9" style="padding: 0 15px">
+						<div class="d-flex flex-wrap">
+
+					    <div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									<a href="produto.html">
+										<img src="imagens/produtos/Produto 1.png" class="img-fluid">
+										<div class="produtoNome">Nome do Produto</div>
+										<div class="produtoPreco">R$20,00</div>
+									</a>
+								</div>
+							</div>
+
+					    <div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 2
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 3
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 4
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 5
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 6
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 7
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 8
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 9
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 10
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 11
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 12
+								</div>
+							</div>
+
+							<div class="content col-12 col-md-6 col-lg-4">
+								<div class="produtoMedio">
+									Caixa 13
+								</div>
+							</div>
+
+
+				  		<a href="#" id="loadMore">Load More</a>
+						</div>
+					</div>
+			</div>
+</div>
+
+
+<!--Footer mínimamente responsivo-->
+		<footer>
+			<div class="container-fluid footer">
+				<div class="container footer-content">
+					<div class="row row-large-gutter">
+
+						<div class="col-md-4 itemFooter">
+							<picture>
+								<source media="(max-width:768px)" srcset="imagens/assets/longoDADA.png">
+								<img class="img-fluid" src="imagens/assets/logoDADA.png" style="width:95%">
+							</picture>
+						</div>
+
+						<div class="col-md-4 itemFooter">
+							<h1 class="footerLetraMaior"> FIQUE POR DENTRO </h1>
+							<div class="footerLetraMenor">
+								<p> Receba nossas novidades</p>
+							</div>
+							<div>
+							<form method="post">
+								<input class="caixinha" type="text" id="Nome" placeholder="nome"/>
+								<input class="caixinha" type="email" id="mail" placeholder="e-mail"/>
+								<input class="botaozinho" type="submit" value="CADASTRAR" onclick="msg()">
+							</form>
+						</div>
+						</div>
+
+						<div class="col-md-4">
+							<h1 class="footerLetraMaior">MANDA UM OI</h1>
+							<div class="footerLetraMenor footerLink">
+								<img src="imagens/assets/insta.png" style="width:26px;height:26px;"> <a href="https://www.instagram.com/dada_ca/?hl=pt"> @dada_ca </a>
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/fb.png" style="width:26px;height:26px;"> <a href="https://www.facebook.com/CALPL-Jr-Design-Mackenzie-264488297773833/ ">@dada.mackenzie		</a>
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/email.png" style="width:26px;height:26px;"> <a> design.calpljr@gmail.com </a>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+
+<style>
+.produtoMedio {
+	transition: transform .2s;
+
+/*	border-style: solid;
+	border-color: gray;
+	border-radius: 5px;
+	border-width: 1px;*/
+}
+
+/*Zoom fajuto do CSS*/
+.produtoMedio:hover{
+  transform: scale(1.05);
+	transition-timing-function: ease;
+}
+
+.produtoMedio a{
+	text-decoration: none
+}
+
+
+/*Produto*/
+.produtoNome{
+	font-size: 22px;
+	color: #212529;
+}
+
+.produtoPreco{
+	font-weight: 700;
+	font-size: 28px;
+	color: #0389A6;
+}
+
+
+.sidebarCelular{
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+
+.sidebarComputador, .sidebarCelular{
+	background-color: #0389A6;
+	color: white;
+	padding: 1em;
+	font-family: "Gotham", sans-serif;
+}
+
+.sidebarComputador h2{
+	font-size: 22px;
+	padding-bottom: 18px;
+}
+
+.sidebarComputador ul, .sidebarCelular ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebarComputador a, .sidebarCelular a{
+	text-decoration: none;
+	font-size: 16px;
+/*	color: #212529;*/
+	color: white;
+}
+
+.sidebarComputador hr, .sidebarCelular hr{
+	margin: 12px auto;
+	border-color: white;
+}
+
+
+.produtoMedio{
+	min-height: 300px;
+	width: auto;
+	/*background-color: gray;
+	color: white;*/
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: "Gotham", sans-serif;
+}
+
+.produtoMedio img{
+	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+
+
+
+@media screen and (max-width: 992px){
+	.sidebarComputador{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 992px){
+	.sidebarCelular{
+		display: none;
+	}
+}
+
+.content {
+	align-content: center;
+  display: none;
+}
+
+
+#loadMore {
+  width: 100%;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+	border: 0;
+	border-radius: 5px;
+  background-color:  #0389A6;
+	font-family: gotham;
+  font-weight: 600;
+	margin: -10px 15px 0;
+}
+
+#loadMore:hover {
+  text-decoration: none;
+	background-color: #036A9A;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+</style>
+
+
+<script>
+//Botão CARREGAR MAIS
+$(document).ready(function(){
+  $(".content").slice(0, 12).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".content:hidden").slice(0, 12).slideDown();
+    if($(".content:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+})
+</script>
+
+
+<!--Links do Javascript-->
+		<script type="text/javascript" src="script.js"></script>
+		<script src="codigos externos/flickity.pkgd.min.js"></script>
+	</body>
+</html>
