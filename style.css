@@ -27,7 +27,7 @@
 
 
 /*  =======================  ESTILOS GERAIS  =======================  */
-/*COnfigurações globais*/
+/*Configurações globais*/
 *{
   text-rendering: optimizeLegibility;
   -webkit-box-sizing: border-box;
@@ -38,9 +38,9 @@
 .subtitulos {
   font-family: "Gotham", sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 32px;
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 /*Parágrafos Gerais*/
@@ -48,8 +48,31 @@
   font-family: "Gotham", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 19px;
 }
+/*Links Gerais (Usado principalmente na página de "Colabore")*/
+.linksPadrao{
+  color: #0389A6;
+}
+
+/*Hover dos links gerais*/
+.linksPadrao:hover{
+  text-decoration: none;
+}
+
+/*Legendas Gerais (Usado principalmente na página do DADA)*/
+.legendas{
+  padding-top: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Gotham", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+
+
 
 /*Classe que aumenta o espaçamento entre colunas*/
 /*
@@ -58,10 +81,10 @@
   margin-right: -30px;
 }
 */
-  .row-large-gutter > * {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+.row-large-gutter > * {
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 
 
@@ -235,8 +258,14 @@
   visibility: visible;
   opacity: 0.75;
   transition-delay: 0.2s;
-  transition-duration: 0.5s;
+  transition-duration: 0.4s;
   transition-timing-function: ease;
+}
+
+/*Transição pra fazer a caixinha desaparacer*/
+.produtoMini:not( :hover ) .invisivel{
+	transition-duration: 0.4s;
+	transition-timing-function: ease;
 }
 
 /*Caixinha com nome e preço dos produtos no Preview Pequeno*/
@@ -257,7 +286,7 @@
 
 /*Nome do Produto na caixinha*/
 .invisivelNome {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding-top: 6px;
 }
