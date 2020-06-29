@@ -1,27 +1,94 @@
 /*  =======================  FONTES  =======================  */
-
-@font-face {
-    font-family: 'Brasilero';
-    src: url('fontes/brasilero2018free-webfont.woff2') format('woff2'),
-         url('fontes/brasilero2018free-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/*Populaire*/
 @font-face {
     font-family: 'Populaire';
-    src: url('fontes/populaire-webfont.woff2') format('woff2'),
-         url('fontes/populaire-webfont.woff') format('woff');
+    src: url('fontes/populaire/Populaire.eot');
+    src: url('fontes/populaire/Populaire.eot?#iefix') format('embedded-opentype'),
+        url('fontes/populaire/Populaire.woff2') format('woff2'),
+        url('fontes/populaire/Populaire.woff') format('woff'),
+        url('fontes/populaire/Populaire.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
+/*Brasilero*/
+@font-face {
+    font-family: 'Brasilero';
+    src: url('fontes/brasilero/Brasilero2018Free-Regular.eot');
+    src: url('fontes/brasilero/Brasilero2018Free-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fontes/brasilero/Brasilero2018Free-Regular.woff2') format('woff2'),
+        url('fontes/brasilero/Brasilero2018Free-Regular.woff') format('woff'),
+        url('fontes/brasilero/Brasilero2018Free-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+/*Gotham Light*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fontes/gotham/light/Gotham-Light.eot');
+    src: url('fontes/gotham/light/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+        url('fontes/gotham/light/Gotham-Light.woff2') format('woff2'),
+        url('fontes/gotham/light/Gotham-Light.woff') format('woff'),
+        url('fontes/gotham/light/Gotham-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
+/*Gotham Book*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fontes/gotham/book/Gotham-Book.eot');
+    src: url('fontes/gotham/book/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('fontes/gotham/book/Gotham-Book.woff2') format('woff2'),
+        url('fontes/gotham/book/Gotham-Book.woff') format('woff'),
+        url('fontes/gotham/book/Gotham-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
+/*Gotham Medium*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fontes/gotham/medium/Gotham-Medium.eot');
+    src: url('fontes/gotham/medium/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fontes/gotham/medium/Gotham-Medium.woff2') format('woff2'),
+        url('fontes/gotham/medium/Gotham-Medium.woff') format('woff'),
+        url('fontes/gotham/medium/Gotham-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 
+/*Gotham Bold*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fontes/gotham/bold/Gotham-Bold.eot');
+    src: url('fontes/gotham/bold/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fontes/gotham/bold/Gotham-Bold.woff2') format('woff2'),
+        url('fontes/gotham/bold/Gotham-Bold.woff') format('woff'),
+        url('fontes/gotham/bold/Gotham-Bold.ttf') format('truetype');
+    font-weight: 700  ;
+    font-style: normal;
+    font-display: swap;
+}
 
-
+/*Gotham Black*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('fontes/gotham/black/Gotham-Black.eot');
+    src: url('fontes/gotham/black/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+        url('fontes/gotham/black/Gotham-Black.woff2') format('woff2'),
+        url('fontes/gotham/black/Gotham-Black.woff') format('woff'),
+        url('fontes/gotham/black/Gotham-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 
@@ -37,7 +104,7 @@
 /*Subtítulos Gerais*/
 .subtitulos {
   font-family: "Gotham", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -67,9 +134,8 @@
   text-align: center;
   font-family: "Gotham", sans-serif;
   font-size: 19px;
-  font-weight: bold;
+  font-weight: 700;
 }
-
 
 
 
@@ -113,7 +179,7 @@
   color: white;
   text-decoration: none;
   font-size: 18px;
-  font-weight:bold;
+  font-weight: 700;
   font-family: "Gotham", sans-serif;
   transition: color .2s;
 }
@@ -256,7 +322,7 @@
 /*Transição para fazer a caixinha aparecer com hover*/
 .produtoMini:hover .invisivel {
   visibility: visible;
-  opacity: 0.75;
+  opacity: 0.85;
   transition-delay: 0.2s;
   transition-duration: 0.4s;
   transition-timing-function: ease;
@@ -294,7 +360,7 @@
 /*Preço do Produto na caixinha*/
 .invisivelPreco {
   padding-top: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
 }
 
@@ -336,7 +402,7 @@
 /*Texto pequeno do Footer*/
 .footerLetraMenor p, .footerLetraMenor a{
   font-family: "Gotham", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-style: normal;
   font-size: 15px;
   color: white;
@@ -384,13 +450,196 @@
   border-radius: 5px;
   background-color:  #0389A6;
 	font-family: "Gotham" sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 .botaozinho:hover {
   background-color: #036A9A;
   transition-duration: 0.2s;
   transition-timing-function: ease;
 }
+
+
+
+
+/*  =======================  PÁGINA DE UMA CATERGORIA  =======================  */
+
+/*  =======================  MENU LATERAL  =======================  */
+/*Botão de celular para mostrar o menu*/
+.sidebarBotao{
+	margin-top: 30px;
+	font-family: "Gotham", sans-serif;
+	font-weight: 500;
+  border: 0;
+	font-size: 18px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color:  #0389A6;
+}
+
+/*Animação do botão de celular*/
+.sidebarBotao:hover, .sidebarBotao:focus{
+  background-color: #036A9A;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+/*Tamanho do dropdown no celular*/
+.sidebarCelular{
+	width: 75%;
+}
+
+/*Estilo do menu em si*/
+.sidebarComputador, .sidebarCelular{
+	background-color: #0389A6;
+	color: white;
+	font-family: "Gotham", sans-serif;
+	font-weight: 400;
+	padding: 16px 0;
+	border-radius: 5px;
+}
+
+/*Estilo do título (Presente apenas na versão de computador)*/
+.sidebarComputador h2{
+	padding: 8px 0 8px 16px;
+	font-size: 21px;
+	font-weight: 900;
+}
+
+.sidebarComputador hr, .sidebarCelular hr{
+	margin: 0 16px;
+	border-color: white;
+}
+
+.sidebarComputador ul, .sidebarCelular ul{
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebarComputador a, .sidebarCelular a{
+	text-decoration: none;
+	display: block;
+	padding: 8px 0 8px 16px;
+	color: white;
+}
+
+.sidebarComputador li, .sidebarCelular li{
+	margin: 0;
+	font-size: 18px;
+}
+
+.sidebarComputador li:hover, .sidebarCelular li:hover{
+	background-color: #036A9A;
+	transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.sidebarComputador li:not( :hover ), .sidebarCelular li:not( :hover ){
+	background-color: #0389A6;
+	transition-duration: 0.6s;
+	transition-timing-function: ease;
+}
+
+
+
+
+
+/*  =======================  PREVIEW MEDIO DO PRODUTO  =======================  */
+/* Caixinha dos produtos na página da loja*/
+
+/*Container do Preview Médio do Produto*/
+.produtoMedio{
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: "Gotham", sans-serif;
+	transition: transform .2s; /*Animação de zoom*/
+}
+
+/*Zoom fajuto do CSS*/
+.produtoMedio:hover{
+  transform: scale(1.05);
+	transition-timing-function: ease;
+}
+
+/*Sombra sutíl aplicada às imagens do Preview*/
+.produtoMedio img{
+	-webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*Romover Estilo dos links do Preview*/
+.produtoMedio a{
+	text-decoration: none
+}
+
+/*Nome do Produto no Preview Médio*/
+.produtoNome{
+	font-size: 22px;
+	color: #212529;
+}
+
+/*Preço do Produto no Preview Médio*/
+.produtoPreco{
+	font-weight: 700;
+	font-size: 28px;
+	color: #0389A6;
+}
+
+/*Fazer o menu do computador sumir em telas médias ou menores*/
+@media screen and (max-width: 992px){
+	.sidebarComputador{
+		display: none;
+	}
+}
+
+/*Fazer o menu mobile sumir em telas grandes ou maiores*/
+@media screen and (min-width: 992px){
+	.sidebarBotao, .sidebarCelular{
+		display: none;
+	}
+}
+
+
+
+/*  =======================  BOTÃO "CARREGAR MAIS" =======================  */
+/*Esconder itens a serem carregados*/
+.content {
+  display: none;
+}
+
+/*Estilo do Botão "CARREGAR MAIS"*/
+#loadMore {
+  width: 100%;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+	border: 0;
+	border-radius: 5px;
+  background-color:  #0389A6;
+	font-family: gotham;
+  font-weight: 500;
+	margin: -10px 15px 0;
+}
+
+/*Hover do Botão "CARREGAR MAIS"*/
+#loadMore:hover {
+  text-decoration: none;
+	background-color: #036A9A;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+/*Mensagem que aparece quando acabam os itens da página*/
+.noContent {
+  color: #000 !important;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
 
 
 
@@ -436,7 +685,7 @@
   width: 250px;
   border-radius: 5px;
   background-color:  #0389A6;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 30px;
   margin: 25px 0 50px;
 }
