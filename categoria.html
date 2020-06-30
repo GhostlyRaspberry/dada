@@ -23,23 +23,23 @@
 <!--Header mínimamente responsivo-->
 			<div class="container-fluid navegacao">
 				<div class="container">
-						<nav class="navbar navbar-expand-md navbar-dark align-items-end" style="background-color:#161F25">
+						<nav class="navbar navbar-expand-md navbar-dark align-items-end" style="background-color:#161F25"> <!--Cor de fundo e estilos-->
 							<a class="navbar-brand" href="index.html">
-								<img src="imagens/assets/logoDADA.png" height="70px">
+								<img src="imagens/assets/logoDADA.png" height="70px"> <!--LOGO DO DADA-->
 							</a>
-						 	<button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggler" type="button">
+						 	<button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarToggler" type="button"> <!--Botão "Hamburger"-->
 								<span class="navbar-toggler-icon"></span>
 							</button>
 							<div class="collapse navbar-collapse" id="navbarToggler">
 								<ul class="navbar-nav ml-auto">
 									<li class="navbar-item navegacaoLinks">
-										<a class="navbar-link" href="dada.html">DADA</a>
+										<a class="navbar-link" href="dada.html">DADA</a> <!-- Primeiro Link -->
 									</li>
 									<li class="navbar-item navegacaoLinks">
-										<a class="navbar-link" href="loja.html">LOJA</a>
+										<a class="navbar-link" href="loja.html">LOJA</a> <!-- Segundo Link -->
 									</li>
 									<li class="navbar-item navegacaoLinks">
-										<a class="navbar-link" href="portfolio.html">PORTFÓLIO</a>
+										<a class="navbar-link" href="portfolio.html">PORTFÓLIO</a> <!-- Terceiro Link -->
 									</li>
 								</ul>
 							</div>
@@ -85,7 +85,9 @@
 					<div class="collapse sidebarCelular" id="conteudoSidebar">
 						<div>
 							<ul>
-						    <li><a href="#">Camisetas</a></li>
+							 	<li><a href="loja.html">Mostrar Todas</a></li>
+	 						  <hr>
+	 						  <li><a href="categoria.html">Camisetas</a></li>
 							  <hr>
 							  <li><a href="#">Canecas</a></li>
 								<hr>
@@ -102,6 +104,8 @@
 								<li><a href="#">Ecobags</a></li>
 								<hr>
 								<li><a href="#">Chaveiros</a></li>
+								<hr>
+								<li><a href="#">Colantes</a></li>
 							</ul>
 						</div>
 					</div>
@@ -125,7 +129,9 @@
 					<div class="sidebarComputador">
 					 <h2>CATEGORIAS</h2>
 					 <ul>
-						 <li><a href="#">Camisetas</a></li>
+						 <li><a href="loja.html">Mostrar Todas</a></li>
+						 <hr>
+						 <li><a href="camisetas.html">Camisetas</a></li>
 						 <hr>
 						 <li><a href="#">Canecas</a></li>
 						 <hr>
@@ -142,6 +148,8 @@
 						 <li><a href="#">Ecobags</a></li>
 						 <hr>
 						 <li><a href="#">Chaveiros</a></li>
+						 <hr>
+						 <li><a href="#">Colantes</a></li>
 					 </ul>
 					</div>
 				</div>
@@ -376,23 +384,20 @@
 
 
 
+		<script>
+		//Botão CARREGAR MAIS
+		$(document).ready(function(){
+		  $(".content").slice(0, 12).show(); //Quantidade de itens são carregados quando a página carrega (12)
+		  $("#loadMore").on("click", function(e){
+		    e.preventDefault();
+		    $(".content:hidden").slice(0, 12).slideDown(); //Quantidade de itens são carregados quando se aperta o botão "CARREGAR MAIS" (12)
+		    if($(".content:hidden").length == 0) {
+		      $("#loadMore").text("Você foi até o fim desta página!").addClass("noContent"); //Mensagem de quando se termina de ver todos os itens de uma página
+		    }
+		  });
+		})
+		</script>
 
-
-
-
-<script>
-//Botão CARREGAR MAIS
-$(document).ready(function(){
-  $(".content").slice(0, 12).show(); //Quantidade de itens são carregados quando a página carrega (12)
-  $("#loadMore").on("click", function(e){
-    e.preventDefault();
-    $(".content:hidden").slice(0, 12).slideDown(); //Quantidade de itens são carregados quando se aperta o botão "CARREGAR MAIS" (12)
-    if($(".content:hidden").length == 0) {
-      $("#loadMore").text("Você foi até o fim desta página!").addClass("noContent"); //Mensagem de quando se termina de ver todos os itens de uma página
-    }
-  });
-})
-</script>
 
 
 <!--Links do Javascript-->
