@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>DADA - Portfólio</title>
+		<title>DADA - Fulano de Tal</title>
 		<link rel="shortcut icon" type="image/x-icon" href="imagens/assets/favicon.ico" />
 <!--CSS do Bootstrap-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -11,11 +11,14 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!--Link do jQuery que por alguma razão precisa estar aqui para o botão de "MOSTRAR MAIS" funcionar-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!--Metadata-->
 		<meta name="viewport" content="width=device-width">
 		<meta lang="pt-BR"/>
 		<meta charset="utf-8"/>
 	</head>
+<body>
 	<header>
 <!--Header mínimamente responsivo-->
 		<div class="container-fluid navegacao">
@@ -58,16 +61,295 @@
 						<a href="portfolio.html">Portfólio</a>
 					</div>
 					<div class="mapaEspacamento"> <img src="imagens/assets/setinhaMapa.png" style="height:11px; padding-bottom:1px;"></div>
-					<div class="mapaAtual">Designer</div>
+					<div class="mapaAtual">Fulano de Tal</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
 
+	<div class="container">
+				<div class="row row-large-gutter justify-content-center">
+					<div class="col-12 designerBackground"></div> <!--Background do Perfil-->
+					<div class="col-12 text-center">
+						<img src="imagens/assets/iconePerfil.png" class="Foda-se"> <!--Foto do Perfil (Customizável)-->
+						<h2 class="designerNomeGrande">Fulano de Tal</h2> <!--Nome do Perfil-->
+					</div>
+		</div>
+	</div>
 
 
 
+	<style>
+/*Pequeno Background presente no perfil do portfólio*/
+.designerBackground{
+	height:160px;
+	background-image: url("imagens/assets/fundoDarkDADA.png");
+	background-clip: content-box;
+}
 
-	</body>
+.Foda-se{
+	border-radius: 80px;
+	border-color: white;
+	border-style: Solid;
+	border-width: 12px;
+	width: 160px;
+	position: relative;
+	bottom: 80px;
+	margin-bottom: -80px;
+}
+
+/*Nome grande que aparece na página de perfil do portfólio*/
+.designerNomeGrande{
+	font-weight: 700;
+	font-family: "Brasilero", sans-serif;
+	color: #0389A6;
+	font-size: 46px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+/*Subtítulos para os subtítulos (Usado principalmente na página de perfil do portfólio)*/
+.subsubtitulos{
+	font-size: 19px;
+	font-weight: 300;
+	position: relative;
+	bottom: 25px;
+}
+
+/*Imagens dos links que mudam de cor com Hover (Usado principalmente no portfólio e na página de colaborador)*/
+ .linksPadrao:hover{
+	filter: brightness(85%);
+	transition-duration: 0.1s;
+}
+
+@media screen and (min-width: 992px){
+	.leoInutil{
+		padding-top: 0px;
+	}
+	.designerNomeGrande{
+		margin-bottom: 50px;
+	}
+}
+
+
+/*Linha que divide as duas colunas*/
+@media screen and (min-width: 992px){
+	.designerColunaProduto{
+		border-right: 2px solid #ccc;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.designerColunaProduto{
+		order: 2;
+	}
+	.designerColunaPerfil{
+		order:1;
+	}
+}
+
+	</style>
+
+
+		<div class="container">
+			<div class="row row-large-gutter">
+			<!--Preview dos Produtos-->
+							<div class="col-12 col-lg-6 designerColunaProduto">
+								<h2 class="subtitulos leoInutil">Olha o que fiz</h2>
+								<h3 class="subsubtitulos">Esses são os meus trabalhos para o DADA</h3>
+									<div class="d-flex flex-wrap">
+
+								    <div class="content col-12 col-md-6"><!--Produto 1-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/camisetas/camiseta1.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Camiseta Bacana</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$42,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+								    <div class="content col-12 col-md-6"><!--Produto 2-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/moletons/moletom4.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Moletom Maroto</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$140,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 3-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/camisetas/camiseta3.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Camiseta Azul</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$34,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 4-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/camisetas/camiseta4.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Manga Comprida</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$40,00</div>
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 5-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/camisetas/camiseta5.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Camiseta Preta</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$34,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 6--> <!--LIMITE DA PÁGINA (Úlitmo item que aparece antes do botão de "CARREGAR MAIS")-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/canecas/caneca1.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Caneca Verde</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$25,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 7-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/bandanas/bandana1.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Bandana Preta</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$28,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+										<div class="content col-12 col-md-6"><!--Produto 8-->
+											<div class="produtoMedio">
+												<a href="produto.html">
+													<img src="imagens/produtos/camisetas/camiseta8.png" class="img-fluid"><!--Imagem de Preview-->
+													<div class="produtoNome">Camiseta Legal M</div><!--Nome do Produto-->
+													<div class="produtoPreco">R$22,00</div><!--Preço-->
+												</a>
+											</div>
+										</div>
+
+							  		<a href="#" id="loadMore">CARREGAR MAIS</a><!--Botão para carregar mais itens-->
+									</div>
+								</div>
+
+								<div class="col-12 col-lg-6 designerColunaPerfil">
+									<h2 class="subtitulos leoInutil">Perfil</h2>
+									<h3 class="subsubtitulos">Conheça um pouco mais sobre mim</h3>
+									<p class="paragrafos"><!--Texto de apresentação do Designer-->
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam finibus urna vitae massa commodo, accumsan sodales tortor efficitur. Vivamus mauris urna.<br>
+										Nullam id commodo risus. Sed purus ex, vehicula sit amet fringilla in, porttitor quis magna. Sed a diam vitae arcu viverra egestas. Fusce laoreet tortor at sodales convallis. Ut tincidunt vitae lorem et eleifend.
+									</p>
+
+									<h2 class="subtitulos">Links para contato</h2>
+									<h3 class="subsubtitulos">É aqui que você me encontra</h3>
+									<p class="paragrafos">
+										<a class="linksPadrao" href="#"> <!--Link LinkedIN-->
+											<img src= "imagens/assets/linkedinAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											Fulano de Tal
+										</a> <br><br>
+										<a class="linksPadrao" href="#"> <!--Link Beehance-->
+											<img src="imagens/assets/behanceAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											Fulano de Tal
+										</a> <br><br>
+										<a class="linksPadrao" href="#"><!--Link Email-->
+											<img src= "imagens/assets/emailAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											fulano@exemplo.com.br
+										</a> <br><br>
+										<a class="linksPadrao" href="#"><!--Link Instagram-->
+											<img src="imagens/assets/instaAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											@fulano_tal420
+										</a> <br><br>
+										<a class="linksPadrao" href="#"><!--Link Facebook-->
+											<img src= "imagens/assets/fbAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											Fulano de Tal
+										</a> <br><br>
+										<a class="linksPadrao" href="#"><!--Link Twitter-->
+											<img src= "imagens/assets/twitterAzul.png" style="width:36px;height:36px;margin-right:8px;">
+											@fulanodetal
+										</a>
+									</p>
+								</div>
+						</div>
+					</div>
+
+
+
+<!--Footer mínimamente responsivo-->
+		<footer>
+			<div class="container-fluid footer">
+				<div class="container footer-content">
+					<div class="row row-large-gutter">
+
+						<div class="col-md-4 itemFooter"> <!--Primeira Coluna do Footer-->
+							<picture>
+								<source media="(max-width:768px)" srcset="imagens/assets/longoDADA.png"> <!--Logo Mobile-->
+								<img class="img-fluid" src="imagens/assets/logoDADA.png" style="width:85%"> <!--Logo Desktop-->
+							</picture>
+						</div>
+
+						<div class="col-md-4 itemFooter"> <!--Segunda Coluna do Footer-->
+							<h1 class="footerLetraMaior"> FIQUE POR DENTRO </h1>
+							<div class="footerLetraMenor">
+								<p> Receba nossas novidades</p>
+							</div>
+							<div>
+							<form method="post">
+								<input class="caixinha" type="text" id="Nome" placeholder="nome"/> <!--Primeiro Input-->
+								<input class="caixinha" type="email" id="mail" placeholder="e-mail"/> <!--Segundo Input-->
+								<input class="botaozinho" type="submit" value="CADASTRAR" onclick="msg()"> <!--Botão Submit-->
+							</form>
+						</div>
+						</div>
+
+						<div class="col-md-4"> <!--Terceira Coluna do Footer-->
+							<h1 class="footerLetraMaior">MANDA UM OI</h1>
+							<div class="footerLetraMenor footerLink">
+								<img src="imagens/assets/insta.png" style="width:26px;height:26px;"> <a href="https://www.instagram.com/dada_ca/?hl=pt"> @dada_ca </a> <!--Primeiro Link (Instagram)-->
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/fb.png" style="width:26px;height:26px;"> <a href="https://www.facebook.com/CALPL-Jr-Design-Mackenzie-264488297773833/ ">@dada.mackenzie	</a> <!--Segundo Link (FaceBook)-->
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/email.png" style="width:26px;height:26px;"> <a href="mailto:contato@design-dada.com.br"> contato@design-dada.com.br </a> <!--Terceiro Link (email)-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+
+	<script>
+	//Botão CARREGAR MAIS
+	$(document).ready(function(){
+		$(".content").slice(0, 6).show(); //Quantidade de itens são carregados quando a página carrega (12)
+		$("#loadMore").on("click", function(e){
+			e.preventDefault();
+			$(".content:hidden").slice(0, 6).slideDown(); //Quantidade de itens são carregados quando se aperta o botão "CARREGAR MAIS" (12)
+			if($(".content:hidden").length == 0) {
+				$("#loadMore").text("Você foi até o fim desta página!").addClass("noContent"); //Mensagem de quando se termina de ver todos os itens de uma página
+			}
+		});
+	})
+	</script>
+
+
+
+<!--Links do Javascript-->
+	<script type="text/javascript" src="script.js"></script>
+</body>
 </html>
