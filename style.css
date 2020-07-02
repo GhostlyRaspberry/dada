@@ -151,7 +151,11 @@
   font-weight: 700;
 }
 
-
+/*Trocar a fonte do texto para "Brasileiro" para colocar ênfase em algo*/
+.enfase{
+  font-family: "Brasilero", sans-serif;
+  font-weight: 700;
+}
 
 
 /*Classe que aumenta o espaçamento entre colunas*/
