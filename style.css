@@ -169,7 +169,6 @@
 
 
 
-
 /*  =======================  HEADER  =======================  */
 /*Container do Header*/
 .navegacao {
@@ -762,11 +761,50 @@
 
 
 
+/*  =======================  PÁGINA DE PORTFÓLIOS  =======================  */
+/*Container do Mini Perfil da página de Porftólios*/
+.portfoliosPerfil{
+	margin-bottom: 45px;
+	margin-top: 15px;
+}
+
+/*Background do Mini Perfil*/
+.portfoliosBackground{
+	height:160px;
+	background-clip: content-box;
+}
+
+/*Foto presente no Mini Perfil*/
+.portfoliosIcone{
+	border-radius: 1000px;
+	border-style: solid;
+	border-color: white;
+	border-width: 12px;
+	width: 50%;
+}
+
+/*Estilo do Nome do Mini Perfil*/
+.portfoliosNome{
+	font-family:"Brasilero", sans-serif;
+	color: #212529;
+	margin-top: 7px;
+	font-weight:700
+}
+
+/*Estilo da breve descrição do Mini Perfil*/
+.portfoliosDescricao{
+	font-family: "Gotham", sans-serif;
+	color: #212529;
+	font-size: 1.1rem;
+}
+
+
+
+
 /*  =======================  PÁGINA DE PERFIL DO DESIGNER INDIVIDUAL  =======================  */
 /*Pequeno Background presente no perfil do portfólio*/
 .designerBackground{
 	height:160px;
-	background-image: url("imagens/assets/fundoDarkDADA.png");
 	background-clip: content-box;
 }
 
