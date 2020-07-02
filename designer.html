@@ -68,88 +68,18 @@
 	</header>
 
 
+
+<!--"Miolo" da Página de Perfil-->
 	<div class="container">
 				<div class="row row-large-gutter justify-content-center">
 					<div class="col-12 designerBackground"></div> <!--Background do Perfil-->
 					<div class="col-12 text-center">
-						<img src="imagens/assets/iconePerfil.png" class="Foda-se"> <!--Foto do Perfil (Customizável)-->
+						<img src="imagens/assets/iconePerfil.png" class="designerIconeGrande"> <!--Foto do Perfil (Customizável)-->
 						<h2 class="designerNomeGrande">Fulano de Tal</h2> <!--Nome do Perfil-->
 					</div>
 		</div>
 	</div>
 
-
-
-	<style>
-/*Pequeno Background presente no perfil do portfólio*/
-.designerBackground{
-	height:160px;
-	background-image: url("imagens/assets/fundoDarkDADA.png");
-	background-clip: content-box;
-}
-
-.Foda-se{
-	border-radius: 80px;
-	border-color: white;
-	border-style: Solid;
-	border-width: 12px;
-	width: 160px;
-	position: relative;
-	bottom: 80px;
-	margin-bottom: -80px;
-}
-
-/*Nome grande que aparece na página de perfil do portfólio*/
-.designerNomeGrande{
-	font-weight: 700;
-	font-family: "Brasilero", sans-serif;
-	color: #0389A6;
-	font-size: 46px;
-	text-align: center;
-	margin-bottom: 16px;
-}
-
-/*Subtítulos para os subtítulos (Usado principalmente na página de perfil do portfólio)*/
-.subsubtitulos{
-	font-size: 19px;
-	font-weight: 300;
-	position: relative;
-	bottom: 25px;
-}
-
-/*Imagens dos links que mudam de cor com Hover (Usado principalmente no portfólio e na página de colaborador)*/
- .linksPadrao:hover{
-	filter: brightness(85%);
-	transition-duration: 0.1s;
-}
-
-@media screen and (min-width: 992px){
-	.leoInutil{
-		padding-top: 0px;
-	}
-	.designerNomeGrande{
-		margin-bottom: 50px;
-	}
-}
-
-
-/*Linha que divide as duas colunas*/
-@media screen and (min-width: 992px){
-	.designerColunaProduto{
-		border-right: 2px solid #ccc;
-	}
-}
-
-@media screen and (max-width: 992px){
-	.designerColunaProduto{
-		order: 2;
-	}
-	.designerColunaPerfil{
-		order:1;
-	}
-}
-
-	</style>
 
 
 		<div class="container">
@@ -336,10 +266,10 @@
 	<script>
 	//Botão CARREGAR MAIS
 	$(document).ready(function(){
-		$(".content").slice(0, 6).show(); //Quantidade de itens são carregados quando a página carrega (12)
+		$(".content").slice(0, 6).show(); //Quantidade de itens são carregados quando a página carrega (6)
 		$("#loadMore").on("click", function(e){
 			e.preventDefault();
-			$(".content:hidden").slice(0, 6).slideDown(); //Quantidade de itens são carregados quando se aperta o botão "CARREGAR MAIS" (12)
+			$(".content:hidden").slice(0, 6).slideDown(); //Quantidade de itens são carregados quando se aperta o botão "CARREGAR MAIS" (6)
 			if($(".content:hidden").length == 0) {
 				$("#loadMore").text("Você foi até o fim desta página!").addClass("noContent"); //Mensagem de quando se termina de ver todos os itens de uma página
 			}

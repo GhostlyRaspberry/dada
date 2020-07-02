@@ -110,6 +110,14 @@
   padding-bottom: 20px;
 }
 
+/*Subtítulos para os subtítulos (Usado principalmente na página de perfil do portfólio)*/
+.subsubtitulos{
+	font-size: 19px;
+	font-weight: 300;
+	position: relative;
+	bottom: 25px;
+}
+
 /*Parágrafos Gerais*/
 .paragrafos {
   font-family: "Gotham", sans-serif;
@@ -125,6 +133,12 @@
 /*Hover dos links gerais*/
 .linksPadrao:hover{
   text-decoration: none;
+}
+
+/*Imagens dos links que mudam de cor com Hover (Usado principalmente no portfólio e na página de colaborador)*/
+ .linksPadrao:hover{
+	filter: brightness(85%);
+	transition-duration: 0.1s;
 }
 
 /*Legendas Gerais (Usado principalmente na página do DADA)*/
@@ -734,12 +748,73 @@
 
 /*Espaçamento entre o nome do produto e as imagens em telas de tamanho médio*/
 @media screen and (max-width:992px){
-.produto h2{
-  padding-top: 30px;
+  .produto h2{
+    padding-top: 30px;
+  }
 }
 
 /*Função de ZOOM do jQuery*/
 .zoom {
   display:inline-block;
   position: relative;
+}
+
+
+
+
+/*  =======================  PÁGINA DE PERFIL DO DESIGNER INDIVIDUAL  =======================  */
+/*Pequeno Background presente no perfil do portfólio*/
+.designerBackground{
+	height:160px;
+	background-image: url("imagens/assets/fundoDarkDADA.png");
+	background-clip: content-box;
+}
+
+/*Foto do designer que aparece na página de perfil do portfólio*/
+.designerIconeGrande{
+	border-radius: 80px;
+	border-color: white;
+	border-style: Solid;
+	border-width: 12px;
+	width: 160px;
+	position: relative;
+	bottom: 80px;
+	margin-bottom: -80px;
+}
+
+/*Nome grande que aparece na página de perfil do portfólio*/
+.designerNomeGrande{
+	font-weight: 700;
+	font-family: "Brasilero", sans-serif;
+	color: #0389A6;
+	font-size: 46px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+/*Gambiarra para compensar pelo "padding-top:50px" da classe "paragrafos"*/
+@media screen and (min-width: 992px){
+	.leoInutil{
+		padding-top: 0px;
+	}
+	.designerNomeGrande{
+		margin-bottom: 50px;
+	}
+}
+
+/*Linha que divide as duas colunas*/
+@media screen and (min-width: 992px){
+	.designerColunaProduto{
+		border-right: 2px solid #ccc;
+	}
+}
+
+/*Trocar a ordem dos elementos para deixar o Perfil acima dos trabalhos do Desiger*/
+@media screen and (max-width: 992px){
+	.designerColunaProduto{
+		order: 2;
+	}
+	.designerColunaPerfil{
+		order:1;
+	}
 }

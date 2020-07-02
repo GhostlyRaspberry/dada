@@ -62,8 +62,92 @@
 
 
 
+<!--"Miolo" da Página de Portfólios-->
+	<div class="container">
+		<div class="row row-large-gutter">
+			<div class="col-12">
+				<h2 class="subtitulos">Portfólios</h2>
+			</div>
+			<a href="designer.html" class="col-12 col-md-6 col-lg-4 text-center portfoliosPerfil" style="text-decoration: none"> <!--Perfil 1-->
+				<div>
+					<img src="imagens/assets/iconePerfil.png" class="img-fluid portfoliosIcone"> <!--Foto do Perfil (Customizável)-->
+					<h2 class="portfoliosNome">Fulano de Tal</h2> <!--Nome do Perfil-->
+					<hr style="border-color: #ccc; border-width: 2px;">
+					<img src="imagens/produtos/camisetas/camiseta1.png" class="img-fluid" style="width:32%"> <!--Trabalho em Destaque 1-->
+					<img src="imagens/produtos/moletons/moletom4.png" class="img-fluid" style="width:32%"> <!--Trabalho em Destaque 2-->
+					<img src="imagens/produtos/camisetas/camiseta4.png" class="img-fluid" style="width:32%"> <!--Trabalho em Destaque 3-->
+				</div>
+			</a>
 
 
-	
+
+		</div>
+	</div>
+
+
+<style>
+
+.portfoliosPerfil{
+	margin-bottom: 45px;
+	margin-top: 35px;
+}
+
+.portfoliosIcone{
+	border-radius: 1000px;
+	width: 50%
+}
+
+.portfoliosNome{
+	font-family:"Brasilero";
+	color: #0389A6;
+	margin-top: 7px;
+	font-weight:700
+}
+</style>
+
+<!--Footer mínimamente responsivo-->
+		<footer>
+			<div class="container-fluid footer">
+				<div class="container footer-content">
+					<div class="row row-large-gutter">
+
+						<div class="col-md-4 itemFooter"> <!--Primeira Coluna do Footer-->
+							<picture>
+								<source media="(max-width:768px)" srcset="imagens/assets/longoDADA.png"> <!--Logo Mobile-->
+								<img class="img-fluid" src="imagens/assets/logoDADA.png" style="width:85%"> <!--Logo Desktop-->
+							</picture>
+						</div>
+
+						<div class="col-md-4 itemFooter"> <!--Segunda Coluna do Footer-->
+							<h1 class="footerLetraMaior"> FIQUE POR DENTRO </h1>
+							<div class="footerLetraMenor">
+								<p> Receba nossas novidades</p>
+							</div>
+							<div>
+							<form method="post">
+								<input class="caixinha" type="text" id="Nome" placeholder="nome"/> <!--Primeiro Input-->
+								<input class="caixinha" type="email" id="mail" placeholder="e-mail"/> <!--Segundo Input-->
+								<input class="botaozinho" type="submit" value="CADASTRAR" onclick="msg()"> <!--Botão Submit-->
+							</form>
+						</div>
+						</div>
+
+						<div class="col-md-4"> <!--Terceira Coluna do Footer-->
+							<h1 class="footerLetraMaior">MANDA UM OI</h1>
+							<div class="footerLetraMenor footerLink">
+								<img src="imagens/assets/insta.png" style="width:26px;height:26px;"> <a href="https://www.instagram.com/dada_ca/?hl=pt"> @dada_ca </a> <!--Primeiro Link (Instagram)-->
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/fb.png" style="width:26px;height:26px;"> <a href="https://www.facebook.com/CALPL-Jr-Design-Mackenzie-264488297773833/ ">@dada.mackenzie	</a> <!--Segundo Link (FaceBook)-->
+							</div>
+							<div class="footerLetraMenor footerLink">
+								<img src= "imagens/assets/email.png" style="width:26px;height:26px;"> <a href="mailto:contato@design-dada.com.br"> contato@design-dada.com.br </a> <!--Terceiro Link (email)-->
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
